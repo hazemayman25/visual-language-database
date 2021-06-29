@@ -1,5 +1,11 @@
+#to run
+Open dist
+Open index.html
+
 # visual-language-database
 
+
+##to compile
 ## Project setup
 ```
 npm install
