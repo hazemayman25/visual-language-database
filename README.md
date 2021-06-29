@@ -1,4 +1,4 @@
-#to run
+## to run
 ```
 Open dist
 Open index.html
