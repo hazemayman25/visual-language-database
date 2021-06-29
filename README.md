@@ -1,7 +1,8 @@
 #to run
+```
 Open dist
 Open index.html
-
+```
 # visual-language-database
 
 
