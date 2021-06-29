@@ -124,11 +124,7 @@
           <div
             style="width: 100%"
             class="d-flex flex-row justify-content-center align-items-end"
-          >
-            <!-- <button class="btn col-6 text-light mb-1" :class="executionClass2">
-              {{ executionButton2 }}
-            </button> -->
-          </div>
+          ></div>
         </div>
       </div>
     </div>
@@ -285,7 +281,6 @@ export default {
       this.databaseToUpdateFrom = null;
       this.tableToUpdateFrom = null;
       this.updateInput = null;
-      console.log(this.componentKey);
     },
     execute() {
       function getKeyByValue(object, value) {
