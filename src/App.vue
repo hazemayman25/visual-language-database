@@ -125,9 +125,9 @@
             style="width: 100%"
             class="d-flex flex-row justify-content-center align-items-end"
           >
-            <button class="btn col-6 text-light mb-1" :class="executionClass2">
+            <!-- <button class="btn col-6 text-light mb-1" :class="executionClass2">
               {{ executionButton2 }}
-            </button>
+            </button> -->
           </div>
         </div>
       </div>
