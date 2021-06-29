@@ -597,6 +597,9 @@ export default {
         this.queries = [...this.queries, queryData];
       });
       setTimeout(this.execute, 200);
+      setTimeout(() => {
+        this.executeClicked = false;
+      }, 500);
     },
   },
   mounted() {
