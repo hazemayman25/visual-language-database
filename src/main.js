@@ -1,0 +1,44 @@
+import { createApp } from "vue";
+import App from "./App.vue";
+import mitt from "mitt";
+const emitter = mitt();
+import HomeNavBar from "./components/HomeNavBar.vue";
+import EngineCanvas from "./components/EngineCanvas.vue";
+import DatabaseTable from "./components/DatabaseTable.vue";
+import QueriesContainer from "./components/QueriesContainer.vue";
+import ButtonsContainer from "./components/ButtonsContainer.vue";
+import SelectQuery from "./components/SelectQuery.vue";
+import WhereQuery from "./components/WhereQuery.vue";
+import InsertQuery from "./components/InsertQuery.vue";
+import DeleteQuery from "./components/DeleteQuery.vue";
+import OrderByQuery from "./components/OrderByQuery.vue";
+import UpdateQuery from "./components/UpdateQuery.vue";
+import DropQuery from "./components/DropQuery.vue";
+import TruncateQuery from "./components/TruncateQuery.vue";
+import CreateTableQuery from "./components/CreateTableQuery.vue";
+import CreateDatabaseQuery from "./components/CreateDatabaseQuery.vue";
+import GuideOffCanvas from "./components/GuideOffCanvas.vue";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
+
+const app = createApp(App);
+app.config.globalProperties.emitter = emitter;
+
+app.component("home-nav-bar", HomeNavBar);
+app.component("database-table", DatabaseTable);
+app.component("engine-canvas", EngineCanvas);
+app.component("queries-container", QueriesContainer);
+app.component("buttons-container", ButtonsContainer);
+app.component("select-query", SelectQuery);
+app.component("where-query", WhereQuery);
+app.component("insert-query", InsertQuery);
+app.component("delete-query", DeleteQuery);
+app.component("order-by-query", OrderByQuery);
+app.component("update-query", UpdateQuery);
+app.component("drop-query", DropQuery);
+app.component("truncate-query", TruncateQuery);
+app.component("create-table-query", CreateTableQuery);
+app.component("create-database-query", CreateDatabaseQuery);
+app.component("guide-off-canvas", GuideOffCanvas);
+
+app.mount("#app");
