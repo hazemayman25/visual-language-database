@@ -8,12 +8,12 @@
             <h3
               style="margin-bottom: 0"
               class="
-              fs-5
-              display-2
-              d-flex
-              justify-content-center
-              align-items-center
-            "
+                fs-5
+                display-2
+                d-flex
+                justify-content-center
+                align-items-center
+              "
             >
               Blocks Group
             </h3>
@@ -262,6 +262,7 @@ export default {
       databaseToUpdateFrom: null,
       tableToUpdateFrom: null,
       updateInput: null,
+      //I PUSHED
     };
   },
   methods: {
@@ -535,9 +536,8 @@ export default {
               return element === "--";
             })
           ) {
-            this.databaseEngine[query.selectedDatabase][
-              query.selectedTable
-            ] = [];
+            this.databaseEngine[query.selectedDatabase][query.selectedTable] =
+              [];
           }
           this.databaseEngine[query.selectedDatabase][query.selectedTable].push(
             query.inputs
