@@ -262,7 +262,6 @@ export default {
       databaseToUpdateFrom: null,
       tableToUpdateFrom: null,
       updateInput: null,
-      //I PUSHED
     };
   },
   methods: {
